@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador Uno</title>
+    <title>Simulador de Cotización</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <h1>Solicitar préstamo</h1>
-    
-    <div class="botonUno">
-        <button onclick="solicitarPrestamo()">Click aquí</button>
-    </div>
 
+    <h1>Obtener Cotización</h1>
+    <div class="divUno">
+        <p>Seleccione una localidad:</p>
+        <select class="divUno" id="localidad">
+            <option value="Caba">Caba</option>
+            <option value="Cordon1">Cordon1</option>
+            <option value="Cordon2">Cordon2</option>
+        </select>
+    </div>
+    <br>
+    <div class="divDos">
+        <button onclick="alert('El precio es $' + obtenerPrecio())">Obtener precio</button>
+    </div>
 </body>
 
-<script src="simuladorUno.js"></script>
+<script src="simuladorCotizacion.js"></script>
 
 </html>
